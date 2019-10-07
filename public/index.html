@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <%= BASE_URL %>表示获取当前文件index.html的路径，打包时会自动识别这个语法 -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--
+        执行npm run build后在dist里面的index.html就会变成下面的样子
+        <link rel="icon" href="/favicon.ico">
+    -->
     <title>supermall</title>
   </head>
   <body>
